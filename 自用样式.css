@@ -1,0 +1,393 @@
+/*by：muruoxi*/
+
+
+/* 全局属性
+ * 页边距 padding:30px;
+ * 全文字体 font-family:ptima-Regular;
+ * 英文换行 word-break:break-all;
+ */
+
+#nice {
+    word-break: break-word;
+    text-align: left;
+    line-height: 1.75;
+    color: rgb(89, 89, 89);
+    font-family: Optima-Regular, Optima, PingFangTC-Light, PingFangSC-light, PingFangTC-light;
+    letter-spacing: 2px;
+    background-image: linear-gradient( 90deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient( 360deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%);
+    background-size: 20px 20px;
+    background-position: center center;
+}
+
+#nice p,
+#nice .multiquote-1,
+#nice ul,
+#nice ol,
+#nice dl,
+#nice table {
+    margin: 0.8em 0;
+}
+
+
+/* 段落，下方未标注标签参数均同此处
+   * 上边距 margin-top:5px;
+   * 下边距 margin-bottom:5px;
+   * 行高 line-height:26px;
+   * 词间距 word-spacing:3px;
+   * 字间距 letter-spacing:3px;
+   * 对齐 text-align:left;
+   * 颜色 color:#3e3e3e;
+   * 字体大小 font-size:16px;
+   * 首行缩进 text-indent:2em;
+   */
+
+#nice p {
+    line-height: 1.8rem;
+    word-spacing: .05rem;
+}
+
+
+/* 一级标题 */
+
+#nice h1 {
+    border-bottom: 2px solid #00c4b6;
+    text-align: center;
+    padding-bottom: 0.3em;
+    font-size: 2.2em;
+    line-height: 1.2;
+    margin: 2.4em auto 1.2em;
+    color: black;
+}
+
+
+/* 一级标题内容 */
+
+#nice h1 .content {}
+
+
+/* 一级标题修饰 请参考有实例的主题 */
+
+#nice h1:after {}
+
+
+/* 二级标题 */
+
+#nice h2 {
+    margin: 1.8em auto 1.2em;
+    font-size: 1.8em;
+    border-bottom: 2px solid #00c4b6;
+}
+
+#nice h2 * {
+    margin-left: .68rem;
+}
+
+
+/* 二级标题修饰 请参考有实例的主题 */
+
+#nice h2:after {}
+
+
+/* 三级标题 */
+
+#nice h3 {
+    font-size: 1.4em;
+    line-height: 1.43;
+    margin: 1.6em auto 1.2em;
+    padding-left: 9px;
+    border-left: 5px solid #00c4b6;
+}
+
+#nice h4 {
+    margin-top: 1.3em;
+    font-size: 1.2em;
+    border: 1px solid #00c4b6;
+    border-top: 4px solid #00c4b6;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: inline-block;
+}
+
+
+/* 无序列表整体样式
+   * list-style-type: square|circle|disc;
+   */
+
+#nice ul,
+#nice ol {
+    padding-left: 35px;
+    margin: .5rem 0;
+}
+
+#nice ul {
+    list-style-type: circle;
+}
+
+#nice ul:first-child,
+#nice ol:first-child {
+    margin-top: 30px;
+}
+
+
+/* 列表内容，不要设置li
+   */
+
+#nice li section {
+    color: #333;
+    font-weight: normal;
+}
+
+#nice ol>li>*:not(ol):not(ul),
+#nice ul>li>*:not(ol):not(ul) {
+    padding-left: .25rem;
+}
+
+
+/* 引用
+   * 左边缘颜色 border-left-color:black;
+   * 背景色 background:gray;
+   */
+
+#nice .multiquote-1 {
+    border-left: 5px solid #5fa7e4;
+    padding: 3px 15px;
+    color: #3f3f3f;
+    background-color: #f4fcff;
+    border-radius: 3px;
+    position: relative;
+}
+
+
+/* 引用文字 */
+
+#nice .multiquote-1 p {}
+
+
+/* 链接 
+   * border-bottom: 1px solid #009688;
+   */
+
+#nice a {
+    border-bottom: 2px solid #81d8cf;
+    padding: 0 4px;
+    transition: .3s;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* 加粗 */
+
+#nice strong {
+    font-weight: border;
+}
+
+
+/* 斜体 */
+
+#nice em {
+    letter-spacing: 0.3em;
+}
+
+
+/* 加粗斜体 */
+
+#nice em strong {
+    letter-spacing: 0.3em;
+}
+
+
+/* 删除线 */
+
+#nice del {}
+
+
+/* 分隔线
+   * 粗细、样式和颜色
+   * border-top:1px solid #3e3e3e;
+   */
+
+#nice hr {
+    height: 1px;
+    padding: 0;
+    border: none;
+    border-top: medium solidid #333;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(248, 57, 41, 0), #0e88eb, rgba(248, 57, 41, 0));
+}
+
+
+/* 图片
+   * 宽度 width:80%;
+   * 居中 margin:0 auto;
+   * 居左 margin:0 0;
+   */
+
+#nice img {
+    border-radius: 0px 0px 5px 5px;
+    display: block;
+    margin: 20px auto;
+    width: 85%;
+    height: 100%;
+    object-fit: contain;
+    box-shadow: #84A1A8 0px 10px 15px;
+}
+
+
+/* 图片描述文字 */
+
+#nice figcaption {
+    display: block;
+    font-size: 12px;
+    font-family: PingFangSC-Light;
+}
+
+
+/* 行内代码 */
+
+#nice p code,
+#nice li code {
+    color: /*自定义样式，实时生效*/
+}
+
+
+/* 非微信代码块
+   * 代码块不换行 display:-webkit-box !important;
+   * 代码块换行 display:block;
+   */
+
+#nice pre code {}
+
+
+/*
+   * 表格内的单元格
+   * 字体大小 font-size: 16px;
+   * 边框 border: 1px solid #ccc;
+   * 内边距 padding: 5px 10px;
+   */
+
+#nice table {
+    padding: 0;
+    word-break: initial;
+    font-size: 12pt;
+}
+
+#nice table tr:nth-child(2n) {
+    background-color: #eee;
+}
+
+#nice table tr th {
+    font-weight: bold;
+    border: 1px solid #c5c5c5;
+    background-color: #f4fcff;
+    border-bottom: 0;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+#nice table tr td {
+    border: 1px solid #c5c5c5;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+#nice table tr th:first-child,
+#nice table tr td:first-child {
+    margin-top: 0;
+}
+
+#nice table tr th:last-child,
+#nice table tr td:last-child {
+    margin-bottom: 0;
+}
+
+
+/* 脚注文字 */
+
+#nice .footnote-word {
+    color: #2d59b3;
+}
+
+
+/* 脚注上标 */
+
+#nice .footnote-ref {
+    color: #6a88c5;
+}
+
+
+/* 非微信代码块
+   * 代码块不换行 display:-webkit-box !important;
+   * 代码块换行 display:block;
+   */
+
+#nice pre code {}
+
+
+/* 脚注文字 */
+
+#nice .footnote-word {
+    color: #0e88eb;
+}
+
+
+/* 脚注上标 */
+
+#nice .footnote-ref {
+    color: #0e88eb;
+}
+
+
+/*脚注链接样式*/
+
+#nice .footnote-item em {
+    color: #082a71;
+    font-size: 12px;
+}
+
+
+/* "参考资料"四个字 
+   * 内容 content: "参考资料";
+   */
+
+#nice .footnotes-sep:before {}
+
+
+/* 参考资料编号 */
+
+#nice .footnote-num {}
+
+
+/* 参考资料文字 */
+
+#nice .footnote-item p {}
+
+
+/* 参考资料解释 */
+
+#nice .footnote-item p em {}
+
+
+/* 行间公式
+   * 最大宽度 max-width: 300% !important;
+   */
+
+#nice .block-equation svg {}
+
+
+/* 行内公式
+   */
+
+#nice .inline-equation svg {}
+
+
+/* 滑动图片
+   */
+
+#nice .imageflow-img {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+}
