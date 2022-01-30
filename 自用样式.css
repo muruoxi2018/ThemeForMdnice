@@ -1,4 +1,4 @@
-/*by：muruoxi*/
+/*自定义样式，实时生效*/
 
 
 /* 全局属性
@@ -8,12 +8,13 @@
  */
 
 #nice {
+    font-size: 14px;
     word-break: break-word;
-    text-align: left;
-    line-height: 1.75;
+    letter-spacing: 0.2em;
+    text-align: justify;
+    line-height: 1.2;
     color: rgb(89, 89, 89);
     font-family: Optima-Regular, Optima, PingFangTC-Light, PingFangSC-light, PingFangTC-light;
-    letter-spacing: 2px;
     background-image: linear-gradient( 90deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient( 360deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%);
     background-size: 20px 20px;
     background-position: center center;
@@ -25,25 +26,37 @@
 #nice ol,
 #nice dl,
 #nice table {
-    margin: 0.8em 0;
+    margin: 0.3em 0;
+}
+
+#nice h1,
+#nice h2,
+#nice h3,
+#nice h4,
+#nice h5,
+#nice h6 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0px;
+    font-weight: bold;
+    color: black;
 }
 
 
 /* 段落，下方未标注标签参数均同此处
-   * 上边距 margin-top:5px;
-   * 下边距 margin-bottom:5px;
-   * 行高 line-height:26px;
-   * 词间距 word-spacing:3px;
-   * 字间距 letter-spacing:3px;
-   * 对齐 text-align:left;
-   * 颜色 color:#3e3e3e;
-   * 字体大小 font-size:16px;
-   * 首行缩进 text-indent:2em;
-   */
+ * 上边距 margin-top:5px;
+ * 下边距 margin-bottom:5px;
+ * 行高 line-height:26px;
+ * 词间距 word-spacing:3px;
+ * 字间距 letter-spacing:3px;
+ * 对齐 text-align:left;
+ * 颜色 color:#3e3e3e;
+ * 字体大小 font-size:16px;
+ * 首行缩进 text-indent:2em;
+ */
 
 #nice p {
-    line-height: 1.8rem;
-    word-spacing: .05rem;
+    font-size: 14px;
 }
 
 
@@ -53,10 +66,8 @@
     border-bottom: 2px solid #00c4b6;
     text-align: center;
     padding-bottom: 0.3em;
-    font-size: 2.2em;
     line-height: 1.2;
     margin: 2.4em auto 1.2em;
-    color: black;
 }
 
 
@@ -73,8 +84,7 @@
 /* 二级标题 */
 
 #nice h2 {
-    margin: 1.8em auto 1.2em;
-    font-size: 1.8em;
+    margin: 1.3em auto 1.2em;
     border-bottom: 2px solid #00c4b6;
 }
 
@@ -91,16 +101,13 @@
 /* 三级标题 */
 
 #nice h3 {
-    font-size: 1.4em;
-    line-height: 1.43;
-    margin: 1.6em auto 1.2em;
+    line-height: 1.3;
     padding-left: 9px;
     border-left: 5px solid #00c4b6;
 }
 
 #nice h4 {
     margin-top: 1.3em;
-    font-size: 1.2em;
     border: 1px solid #00c4b6;
     border-top: 4px solid #00c4b6;
     padding-left: 6px;
@@ -110,8 +117,8 @@
 
 
 /* 无序列表整体样式
-   * list-style-type: square|circle|disc;
-   */
+ * list-style-type: square|circle|disc;
+ */
 
 #nice ul,
 #nice ol {
@@ -130,7 +137,7 @@
 
 
 /* 列表内容，不要设置li
-   */
+ */
 
 #nice li section {
     color: #333;
@@ -144,9 +151,9 @@
 
 
 /* 引用
-   * 左边缘颜色 border-left-color:black;
-   * 背景色 background:gray;
-   */
+ * 左边缘颜色 border-left-color:black;
+ * 背景色 background:gray;
+ */
 
 #nice .multiquote-1 {
     border-left: 5px solid #5fa7e4;
@@ -164,8 +171,8 @@
 
 
 /* 链接 
-   * border-bottom: 1px solid #009688;
-   */
+ * border-bottom: 1px solid #009688;
+ */
 
 #nice a {
     border-bottom: 2px solid #81d8cf;
@@ -203,9 +210,9 @@
 
 
 /* 分隔线
-   * 粗细、样式和颜色
-   * border-top:1px solid #3e3e3e;
-   */
+ * 粗细、样式和颜色
+ * border-top:1px solid #3e3e3e;
+ */
 
 #nice hr {
     height: 1px;
@@ -218,10 +225,10 @@
 
 
 /* 图片
-   * 宽度 width:80%;
-   * 居中 margin:0 auto;
-   * 居左 margin:0 0;
-   */
+ * 宽度 width:80%;
+ * 居中 margin:0 auto;
+ * 居左 margin:0 0;
+ */
 
 #nice img {
     border-radius: 0px 0px 5px 5px;
@@ -252,19 +259,19 @@
 
 
 /* 非微信代码块
-   * 代码块不换行 display:-webkit-box !important;
-   * 代码块换行 display:block;
-   */
+ * 代码块不换行 display:-webkit-box !important;
+ * 代码块换行 display:block;
+ */
 
 #nice pre code {}
 
 
 /*
-   * 表格内的单元格
-   * 字体大小 font-size: 16px;
-   * 边框 border: 1px solid #ccc;
-   * 内边距 padding: 5px 10px;
-   */
+ * 表格内的单元格
+ * 字体大小 font-size: 16px;
+ * 边框 border: 1px solid #ccc;
+ * 内边距 padding: 5px 10px;
+ */
 
 #nice table {
     padding: 0;
@@ -319,9 +326,9 @@
 
 
 /* 非微信代码块
-   * 代码块不换行 display:-webkit-box !important;
-   * 代码块换行 display:block;
-   */
+ * 代码块不换行 display:-webkit-box !important;
+ * 代码块换行 display:block;
+ */
 
 #nice pre code {}
 
@@ -349,8 +356,8 @@
 
 
 /* "参考资料"四个字 
-   * 内容 content: "参考资料";
-   */
+ * 内容 content: "参考资料";
+ */
 
 #nice .footnotes-sep:before {}
 
@@ -371,20 +378,20 @@
 
 
 /* 行间公式
-   * 最大宽度 max-width: 300% !important;
-   */
+ * 最大宽度 max-width: 300% !important;
+ */
 
 #nice .block-equation svg {}
 
 
 /* 行内公式
-   */
+ */
 
 #nice .inline-equation svg {}
 
 
 /* 滑动图片
-   */
+ */
 
 #nice .imageflow-img {
     display: inline-block;
